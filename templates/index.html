@@ -76,7 +76,7 @@
 </nav>
 <section style="margin-left: 20%; margin-top: 20">
   <h1>Welcome to Text Analyser</h1>
-  <form action="/analyser" method="get">
+  <form action="/analyser" method="post"> {% csrf_token%}
     <div class="form-floating mb-3">
     <textarea class="form-control" name='box' placeholder="Enter your text here" id="floatingTextarea2"
               style="height: 100px; width: 80%"></textarea>

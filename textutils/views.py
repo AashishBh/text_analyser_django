@@ -55,7 +55,7 @@ def analyser(request):
     #     return render(request,'analyser.html',params)
     # else:
     #     return HttpResponse("Checkbox not selected")
-    textareaText = request.GET.get('box', 'default')
+    textareaText = request.POST.get('box', 'default')
     # print(textareaTextList)
     # textareaText = str()
     # print(textareaText)
@@ -63,10 +63,10 @@ def analyser(request):
     #     textareaText = textareaText + "\n" + x
     # print(textareaText)
     # print(len(textareaText))
-    removePunctuation = request.GET.get('removePunc','off')
-    capitalise = request.GET.get('capitalise', 'off')
-    lineRemover = request.GET.get('lineRemover', 'off')
-    extraSpaceRemover = request.GET.get('extraSpaceRemover', 'off')
+    removePunctuation = request.POST.get('removePunc','off')
+    capitalise = request.POST.get('capitalise', 'off')
+    lineRemover = request.POST.get('lineRemover', 'off')
+    extraSpaceRemover = request.POST.get('extraSpaceRemover', 'off')
     print(lineRemover)
     refinedText = str()
     if removePunctuation == 'on':
