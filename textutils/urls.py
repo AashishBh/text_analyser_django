@@ -23,5 +23,8 @@ urlpatterns = [
     path('about', views.about, name="about"),
     path('file', views.file, name="file"),
     path('navigator', views.navigator, name="navigator"),
-    path('analyser', views.analyser, name="analyser")
+    path('analyser', views.analyser, name="analyser"),
+    path('charcounter', views.charCounter, name="charcounter")
+    # path('capitalise', views.capitalise, name="capitalise")
+
 ]
